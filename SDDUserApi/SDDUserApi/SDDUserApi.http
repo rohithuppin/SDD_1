@@ -1,0 +1,6 @@
+@SDDUserApi_HostAddress = http://localhost:5172
+
+GET {{SDDUserApi_HostAddress}}/weatherforecast/
+Accept: application/json
+
+###

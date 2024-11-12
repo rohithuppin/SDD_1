@@ -1,0 +1,190 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "S:\\Work\\Interview Assignments\\SDD \u0026 Dautom\\V3\\SDDUserApi\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{7D945688-5328-4BBC-ABDF-4C71DB68AD8B}|SDDUserApi\\SDDUserApi.csproj|s:\\work\\interview assignments\\sdd \u0026 dautom\\v3\\sdduserapi\\sdduserapi\\utilities\\passwordhasher.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{7D945688-5328-4BBC-ABDF-4C71DB68AD8B}|SDDUserApi\\SDDUserApi.csproj|solutionrelative:sdduserapi\\utilities\\passwordhasher.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{7D945688-5328-4BBC-ABDF-4C71DB68AD8B}|SDDUserApi\\SDDUserApi.csproj|s:\\work\\interview assignments\\sdd \u0026 dautom\\v3\\sdduserapi\\sdduserapi\\controllers\\userscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{7D945688-5328-4BBC-ABDF-4C71DB68AD8B}|SDDUserApi\\SDDUserApi.csproj|solutionrelative:sdduserapi\\controllers\\userscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{7D945688-5328-4BBC-ABDF-4C71DB68AD8B}|SDDUserApi\\SDDUserApi.csproj|s:\\work\\interview assignments\\sdd \u0026 dautom\\v3\\sdduserapi\\sdduserapi\\services\\userservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{7D945688-5328-4BBC-ABDF-4C71DB68AD8B}|SDDUserApi\\SDDUserApi.csproj|solutionrelative:sdduserapi\\services\\userservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{7D945688-5328-4BBC-ABDF-4C71DB68AD8B}|SDDUserApi\\SDDUserApi.csproj|s:\\work\\interview assignments\\sdd \u0026 dautom\\v3\\sdduserapi\\sdduserapi\\repository\\userrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{7D945688-5328-4BBC-ABDF-4C71DB68AD8B}|SDDUserApi\\SDDUserApi.csproj|solutionrelative:sdduserapi\\repository\\userrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{7D945688-5328-4BBC-ABDF-4C71DB68AD8B}|SDDUserApi\\SDDUserApi.csproj|s:\\work\\interview assignments\\sdd \u0026 dautom\\v3\\sdduserapi\\sdduserapi\\services\\iuserservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{7D945688-5328-4BBC-ABDF-4C71DB68AD8B}|SDDUserApi\\SDDUserApi.csproj|solutionrelative:sdduserapi\\services\\iuserservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{7D945688-5328-4BBC-ABDF-4C71DB68AD8B}|SDDUserApi\\SDDUserApi.csproj|s:\\work\\interview assignments\\sdd \u0026 dautom\\v3\\sdduserapi\\sdduserapi\\data\\model\\user.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{7D945688-5328-4BBC-ABDF-4C71DB68AD8B}|SDDUserApi\\SDDUserApi.csproj|solutionrelative:sdduserapi\\data\\model\\user.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{7D945688-5328-4BBC-ABDF-4C71DB68AD8B}|SDDUserApi\\SDDUserApi.csproj|s:\\work\\interview assignments\\sdd \u0026 dautom\\v3\\sdduserapi\\sdduserapi\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{7D945688-5328-4BBC-ABDF-4C71DB68AD8B}|SDDUserApi\\SDDUserApi.csproj|solutionrelative:sdduserapi\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{7D945688-5328-4BBC-ABDF-4C71DB68AD8B}|SDDUserApi\\SDDUserApi.csproj|s:\\work\\interview assignments\\sdd \u0026 dautom\\v3\\sdduserapi\\sdduserapi\\data\\dbconfiguration\\applicationdbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{7D945688-5328-4BBC-ABDF-4C71DB68AD8B}|SDDUserApi\\SDDUserApi.csproj|solutionrelative:sdduserapi\\data\\dbconfiguration\\applicationdbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{7D945688-5328-4BBC-ABDF-4C71DB68AD8B}|SDDUserApi\\SDDUserApi.csproj|s:\\work\\interview assignments\\sdd \u0026 dautom\\v3\\sdduserapi\\sdduserapi\\middlewares\\exceptionhandlingmiddleware.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{7D945688-5328-4BBC-ABDF-4C71DB68AD8B}|SDDUserApi\\SDDUserApi.csproj|solutionrelative:sdduserapi\\middlewares\\exceptionhandlingmiddleware.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{7D945688-5328-4BBC-ABDF-4C71DB68AD8B}|SDDUserApi\\SDDUserApi.csproj|s:\\work\\interview assignments\\sdd \u0026 dautom\\v3\\sdduserapi\\sdduserapi\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
+      "RelativeMoniker": "D:0:0:{7D945688-5328-4BBC-ABDF-4C71DB68AD8B}|SDDUserApi\\SDDUserApi.csproj|solutionrelative:sdduserapi\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 0,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "PasswordHasher.cs",
+              "DocumentMoniker": "S:\\Work\\Interview Assignments\\SDD \u0026 Dautom\\V3\\SDDUserApi\\SDDUserApi\\Utilities\\PasswordHasher.cs",
+              "RelativeDocumentMoniker": "SDDUserApi\\Utilities\\PasswordHasher.cs",
+              "ToolTip": "S:\\Work\\Interview Assignments\\SDD \u0026 Dautom\\V3\\SDDUserApi\\SDDUserApi\\Utilities\\PasswordHasher.cs",
+              "RelativeToolTip": "SDDUserApi\\Utilities\\PasswordHasher.cs",
+              "ViewState": "AQIAABMAAAAAAAAAAAAgwBkAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-10T18:34:17.737Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "IUserService.cs",
+              "DocumentMoniker": "S:\\Work\\Interview Assignments\\SDD \u0026 Dautom\\V3\\SDDUserApi\\SDDUserApi\\Services\\IUserService.cs",
+              "RelativeDocumentMoniker": "SDDUserApi\\Services\\IUserService.cs",
+              "ToolTip": "S:\\Work\\Interview Assignments\\SDD \u0026 Dautom\\V3\\SDDUserApi\\SDDUserApi\\Services\\IUserService.cs",
+              "RelativeToolTip": "SDDUserApi\\Services\\IUserService.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAqwAoAAAASAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-10T16:56:59.387Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "User.cs",
+              "DocumentMoniker": "S:\\Work\\Interview Assignments\\SDD \u0026 Dautom\\V3\\SDDUserApi\\SDDUserApi\\Data\\Model\\User.cs",
+              "RelativeDocumentMoniker": "SDDUserApi\\Data\\Model\\User.cs",
+              "ToolTip": "S:\\Work\\Interview Assignments\\SDD \u0026 Dautom\\V3\\SDDUserApi\\SDDUserApi\\Data\\Model\\User.cs",
+              "RelativeToolTip": "SDDUserApi\\Data\\Model\\User.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAqwAkAAAAsAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-10T15:08:16.507Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "UserService.cs",
+              "DocumentMoniker": "S:\\Work\\Interview Assignments\\SDD \u0026 Dautom\\V3\\SDDUserApi\\SDDUserApi\\Services\\UserService.cs",
+              "RelativeDocumentMoniker": "SDDUserApi\\Services\\UserService.cs",
+              "ToolTip": "S:\\Work\\Interview Assignments\\SDD \u0026 Dautom\\V3\\SDDUserApi\\SDDUserApi\\Services\\UserService.cs",
+              "RelativeToolTip": "SDDUserApi\\Services\\UserService.cs",
+              "ViewState": "AQIAAB4AAAAAAAAAAAArwDQAAAAIAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-10T14:46:41.711Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "UsersController.cs",
+              "DocumentMoniker": "S:\\Work\\Interview Assignments\\SDD \u0026 Dautom\\V3\\SDDUserApi\\SDDUserApi\\Controllers\\UsersController.cs",
+              "RelativeDocumentMoniker": "SDDUserApi\\Controllers\\UsersController.cs",
+              "ToolTip": "S:\\Work\\Interview Assignments\\SDD \u0026 Dautom\\V3\\SDDUserApi\\SDDUserApi\\Controllers\\UsersController.cs",
+              "RelativeToolTip": "SDDUserApi\\Controllers\\UsersController.cs",
+              "ViewState": "AQIAADcAAAAAAAAAAADgv0gAAAAMAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-10T13:57:29.307Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "UserRepository.cs",
+              "DocumentMoniker": "S:\\Work\\Interview Assignments\\SDD \u0026 Dautom\\V3\\SDDUserApi\\SDDUserApi\\Repository\\UserRepository.cs",
+              "RelativeDocumentMoniker": "SDDUserApi\\Repository\\UserRepository.cs",
+              "ToolTip": "S:\\Work\\Interview Assignments\\SDD \u0026 Dautom\\V3\\SDDUserApi\\SDDUserApi\\Repository\\UserRepository.cs",
+              "RelativeToolTip": "SDDUserApi\\Repository\\UserRepository.cs",
+              "ViewState": "AQIAAA8AAAAAAAAAAIA2wCgAAAAIAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-10T14:08:55.869Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "Program.cs",
+              "DocumentMoniker": "S:\\Work\\Interview Assignments\\SDD \u0026 Dautom\\V3\\SDDUserApi\\SDDUserApi\\Program.cs",
+              "RelativeDocumentMoniker": "SDDUserApi\\Program.cs",
+              "ToolTip": "S:\\Work\\Interview Assignments\\SDD \u0026 Dautom\\V3\\SDDUserApi\\SDDUserApi\\Program.cs",
+              "RelativeToolTip": "SDDUserApi\\Program.cs",
+              "ViewState": "AQIAABkAAAAAAAAAAAAewDEAAAAEAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-10T14:20:06.526Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "ApplicationDbContext.cs",
+              "DocumentMoniker": "S:\\Work\\Interview Assignments\\SDD \u0026 Dautom\\V3\\SDDUserApi\\SDDUserApi\\Data\\DBConfiguration\\ApplicationDbContext.cs",
+              "RelativeDocumentMoniker": "SDDUserApi\\Data\\DBConfiguration\\ApplicationDbContext.cs",
+              "ToolTip": "S:\\Work\\Interview Assignments\\SDD \u0026 Dautom\\V3\\SDDUserApi\\SDDUserApi\\Data\\DBConfiguration\\ApplicationDbContext.cs",
+              "RelativeToolTip": "SDDUserApi\\Data\\DBConfiguration\\ApplicationDbContext.cs",
+              "ViewState": "AQIAAAYAAAAAAAAAAAAAAAsAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-11T01:27:04.666Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "ExceptionHandlingMiddleware.cs",
+              "DocumentMoniker": "S:\\Work\\Interview Assignments\\SDD \u0026 Dautom\\V3\\SDDUserApi\\SDDUserApi\\Middlewares\\ExceptionHandlingMiddleware.cs",
+              "RelativeDocumentMoniker": "SDDUserApi\\Middlewares\\ExceptionHandlingMiddleware.cs",
+              "ToolTip": "S:\\Work\\Interview Assignments\\SDD \u0026 Dautom\\V3\\SDDUserApi\\SDDUserApi\\Middlewares\\ExceptionHandlingMiddleware.cs",
+              "RelativeToolTip": "SDDUserApi\\Middlewares\\ExceptionHandlingMiddleware.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAgAAABGAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-11T00:59:19.004Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 9,
+              "Title": "appsettings.json",
+              "DocumentMoniker": "S:\\Work\\Interview Assignments\\SDD \u0026 Dautom\\V3\\SDDUserApi\\SDDUserApi\\appsettings.json",
+              "RelativeDocumentMoniker": "SDDUserApi\\appsettings.json",
+              "ToolTip": "S:\\Work\\Interview Assignments\\SDD \u0026 Dautom\\V3\\SDDUserApi\\SDDUserApi\\appsettings.json",
+              "RelativeToolTip": "SDDUserApi\\appsettings.json",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAABEAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
+              "WhenOpened": "2024-11-10T14:16:19.539Z",
+              "EditorCaption": ""
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

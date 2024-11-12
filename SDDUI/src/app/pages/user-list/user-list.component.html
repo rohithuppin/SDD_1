@@ -1,0 +1,142 @@
+<!-- <div class="row">
+    <div class="col-12 text-center">        
+        <h3> List of active users in the application. Please note this screen is visible to only admin users</h3>
+    </div>
+    <div class="col-12 text-end">        
+        <button (click)="onCreate()" class="btn btn-success">Add New</button><br />
+    </div>
+</div>
+<div class="row">
+    <div class="col-12 margin:10px">
+        <table class="table table-bordered">
+            <thead>
+                <tr>
+                    <th>Sr No</th>
+                    <th>Name</th>
+                    <th>EmailId</th>
+                    <th>mobileNo</th>
+                    <th>City</th>
+                    <th>Action</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>
+                        <br />
+                        <div class = "form-outline mt-3">
+                            <input type = "search" [(ngModel)]="searchtext" id="search_user" class = "form-control" placeholder="Search" aria-label="Search" />
+                        </div>
+                        <br/>
+                    </td>
+                </tr>
+                @for (item of userList; track $index) {
+                    <tr>
+                        <td>{{$index+1}}</td>
+                        <td>{{item.fullname}}</td>
+                        <td>{{item.emailId}}</td>
+                        <td>{{item.mobileNo}}</td>
+                        <td>{{item.city}}</td>
+                        <td class="text-center">
+                            <button (click)="onEdit(item.userId)" class="btn btn-danger mx-2">Edit</button>
+                            <button (click)="onDelete(item.userId)" class="btn btn-danger">Delete</button>
+                        </td>
+                    </tr>
+                }                
+            </tbody>
+        </table>
+    </div>
+</div> -->
+
+
+
+<div class="row mb-4">
+    <div class="col-12 text-center">
+        <h3 class="font-weight-bold text-primary display-4">List of Active Users</h3>
+        <p class="text-muted mb-4">Please note, this screen is visible to only admin users.</p>
+    </div>
+    <div class="col-12 text-end">
+        <button (click)="onCreate()" class="btn btn-success">Add New</button><br />
+    </div>
+</div>
+
+<div class="row">
+    <div class="col-12">
+        <!-- Search Bar and Page Size Dropdown -->
+        <div class="form-outline d-flex justify-content-between align-items-center mb-3">
+            <div class="d-flex w-75">
+                <input 
+                    type="search" 
+                    [(ngModel)]="searchtext" 
+                    (ngModelChange)="setSearchtext($event)"
+                    id="search_user" 
+                    class="form-control form-control-lg" 
+                    placeholder="Search users..." 
+                    aria-label="Search" 
+                    style="margin-right: 10px;" />
+                <select 
+                    [(ngModel)]="pageSize" 
+                    (change)="onPageSizeChange(pageSize)" 
+                    class="form-select d-inline-block" 
+                    style="width: auto;">
+                    <option [value]="5">5</option>
+                    <option [value]="10">10</option>
+                    <option [value]="15">15</option>
+                    <option [value]="20">20</option>
+                </select>
+            </div>
+        </div>
+
+        <!-- User Table -->
+        <table class="table table-striped table-bordered table-hover shadow-lg">
+            <thead class="table-dark">
+                <tr>
+                    <th># Sr No</th>
+                    <th>Name</th>
+                    <th>Email</th>
+                    <th>Mobile</th>
+                    <th>City</th>
+                    <th class="text-center">Actions</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr *ngFor="let item of paginatedUsers | filter: searchtext; let i = index" class="table-row">
+                    <td>{{ (currentPage - 1) * pageSize + (i + 1) }}</td>
+                    <td>{{ item.fullname }}</td>
+                    <td>{{ item.emailId }}</td>
+                    <td>{{ item.mobileNo }}</td>
+                    <td>{{ item.city }}</td>
+                    <td class="text-center">
+                        <button (click)="onEdit(item.userId)" class="btn btn-warning mx-2">Edit</button>
+                        <button (click)="onDelete(item.userId)" class="btn btn-danger">Delete</button>
+                    </td>
+                </tr>
+            </tbody>
+        </table>   
+        
+        <div *ngIf="paginatedUsers.length === 0" class="alert alert-warning text-center">
+            No users found matching your search criteria.
+        </div>
+
+        <!-- Pagination Controls -->
+        <div class="d-flex justify-content-center mt-3">
+            <ul class="pagination">
+                <!-- Previous Button -->
+                <li class="page-item" [class.disabled]="currentPage === 1">
+                    <a class="page-link" (click)="onPageChange(currentPage - 1)" href="javascript:void(0)">Previous</a>
+                </li>
+
+                <!-- Page Numbers -->
+                <li class="page-item" *ngFor="let page of [].constructor(totalPages); let i = index">
+                    <a class="page-link" (click)="onPageChange(i + 1)" [class.active]="currentPage === i + 1" href="javascript:void(0)">
+                        {{ i + 1 }}
+                    </a>
+                </li>
+
+                <!-- Next Button -->
+                <li class="page-item" [class.disabled]="currentPage === totalPages">
+                    <a class="page-link" (click)="onPageChange(currentPage + 1)" href="javascript:void(0)">Next</a>
+                </li>
+            </ul>
+        </div>
+    </div>
+</div>
