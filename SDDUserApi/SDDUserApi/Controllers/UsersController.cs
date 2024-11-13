@@ -72,7 +72,7 @@ namespace SDDUserApi.Controllers
 
             var match = _passwordHasher.VerifyPasswordHash(model.Password, user.PasswordHash);
 
-            if (match)
+            if (!match)
             {
                 _logger.LogWarning("Password incorrect for user - {0}", model.EmailId);
                 return Unauthorized(new { message = "Invalid EmailId or password." });
@@ -80,7 +80,8 @@ namespace SDDUserApi.Controllers
             else
             {
                 var tokenJWT = GenerateJwtToken(user);
-                return Ok(new { Token = tokenJWT, User = user }); }
+                return Ok(new { Token = tokenJWT, User = user }); 
+            }
         }        
 
         private string GenerateJwtToken(User user)
@@ -113,7 +114,7 @@ namespace SDDUserApi.Controllers
                 return BadRequest();
             _auditService.LogActivity(1, "CREATE", $"Create new user");
 
-            var hashPwd = _passwordHasher.HashPassword("password");//Default password for everyone during first time creation
+            var hashPwd = _passwordHasher.HashPassword(userDto.PasswordHash);//Default password for everyone during first time creation
             int _newUserId = await _userService.AddUserAsync(userDto,hashPwd);
             return Ok(new { newUserId = _newUserId });
         }
