@@ -23,21 +23,28 @@ namespace SDDUserApi.Controllers
         private readonly IConfiguration _configuration;
         private readonly IPasswordHasher _passwordHasher;
         private readonly ILogger<UsersController> _logger;
+        private readonly AuthService _authService;
 
-        public UsersController(IUserService userService, IAuditService auditService, IConfiguration configuration, IPasswordHasher passwordHasher, ILogger<UsersController> logger)
+        public UsersController(IUserService userService, IAuditService auditService, IConfiguration configuration, IPasswordHasher passwordHasher, ILogger<UsersController> logger, AuthService authService)
         {
             _userService = userService;
             _auditService = auditService;
             _configuration = configuration;
             _passwordHasher = passwordHasher;
+            _authService = authService;
             _logger = logger;
         }
 
         // GET: api/user
         [HttpGet]
-        //[Authorize]
+        [Authorize]
         public async Task<IActionResult> GetAllUsers()
         {
+            string token = Request.Headers["Authorization"].ToString();               
+            bool validToken = _authService.ValidateUserToken(token.Trim());
+            if (!validToken)
+                return Unauthorized(new { message = "InvalidToken expired please login again" });
+
             _logger.LogInformation("Fetching user data.");
             _auditService.LogActivity(1,"READ", $"Get all user");
             var userDtos = await _userService.GetAllUsersAsync();
@@ -46,8 +53,14 @@ namespace SDDUserApi.Controllers
 
         // GET: api/user/{id}
         [HttpGet("{id}")]
+        [Authorize]
         public async Task<IActionResult> GetUserById(int id)
         {
+            string token = Request.Headers["Authorization"].ToString();
+            bool validToken = _authService.ValidateUserToken(token.Trim());
+            if (!validToken)
+                return Unauthorized(new { message = "InvalidToken expired please login again" });
+
             _logger.LogInformation("Fetching user id - {0} data.",id);
             _auditService.LogActivity(1, "READById", $"Get user by Id");
             var userDto = await _userService.GetUserByIdAsync(id);
@@ -58,6 +71,7 @@ namespace SDDUserApi.Controllers
         }
 
         [HttpPost("login")]
+
         public async Task<IActionResult> Login([FromBody] LoginDTO model)
         {
             _logger.LogInformation("Fetching user name - {0} data.", model.EmailId);
@@ -79,37 +93,21 @@ namespace SDDUserApi.Controllers
             }
             else
             {
-                var tokenJWT = GenerateJwtToken(user);
+                var tokenJWT = _authService.GenerateJwtToken(user);
                 return Ok(new { Token = tokenJWT, User = user }); 
             }
-        }        
-
-        private string GenerateJwtToken(User user)
-        {
-            var claims = new[]
-            {
-                new Claim(ClaimTypes.Name, user.EmailId),
-                new Claim(ClaimTypes.NameIdentifier, user.EmailId)
-            };
-
-            var key = new SymmetricSecurityKey(Encoding.UTF8.GetBytes(_configuration["Jwt:SecretKey"]));
-            var creds = new SigningCredentials(key, SecurityAlgorithms.HmacSha256);
-
-            var token = new JwtSecurityToken(
-                issuer: _configuration["Jwt:Issuer"],
-                audience: _configuration["Jwt:Audience"],
-                claims: claims,
-                expires: DateTime.Now.AddDays(1),
-                signingCredentials: creds
-            );
-
-            return new JwtSecurityTokenHandler().WriteToken(token);
-        }
+        }               
 
         // POST: api/user
         [HttpPost]
+        [Authorize]
         public async Task<IActionResult> AddUser([FromBody] UserDto userDto)
         {
+            string token = Request.Headers["Authorization"].ToString();
+            bool validToken = _authService.ValidateUserToken(token.Trim());
+            if (!validToken)
+                return Unauthorized(new { message = "InvalidToken expired please login again" });
+
             if (userDto == null)
                 return BadRequest();
             _auditService.LogActivity(1, "CREATE", $"Create new user");
@@ -121,8 +119,14 @@ namespace SDDUserApi.Controllers
 
         // PUT: api/user/{id}
         [HttpPut("{id}")]
+        [Authorize]
         public async Task<int> UpdateUser(int id, [FromBody] UserDto userDto)
         {
+            string token = Request.Headers["Authorization"].ToString();
+            bool validToken = _authService.ValidateUserToken(token.Trim());
+            if (!validToken)
+                return 0;
+
             _auditService.LogActivity(1, "UPDATE", $"Update user");
 
             var existingUser = await _userService.GetUserByIdAsync(id);
@@ -135,8 +139,14 @@ namespace SDDUserApi.Controllers
 
         // DELETE: api/user/{id}
         [HttpDelete("{id}")]
+        [Authorize]
         public async Task<int> DeleteUser(int id)
         {
+            string token = Request.Headers["Authorization"].ToString();
+            bool validToken = _authService.ValidateUserToken(token.Trim());
+            if (!validToken)
+                return 0;
+
             _auditService.LogActivity(1, "DELETE", $"Deleting user id - " + id);
             
             return await _userService.DeleteUserAsync(id);

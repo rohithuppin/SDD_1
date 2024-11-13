@@ -9,8 +9,10 @@ S:\Work\Interview Assignments\SDD & Dautom\V3\SDDUserApi\SDDUserApi\bin\Debug\ne
 S:\Work\Interview Assignments\SDD & Dautom\V3\SDDUserApi\SDDUserApi\bin\Debug\net8.0\AutoMapper.Extensions.Microsoft.DependencyInjection.dll
 S:\Work\Interview Assignments\SDD & Dautom\V3\SDDUserApi\SDDUserApi\bin\Debug\net8.0\Azure.Core.dll
 S:\Work\Interview Assignments\SDD & Dautom\V3\SDDUserApi\SDDUserApi\bin\Debug\net8.0\Azure.Identity.dll
+S:\Work\Interview Assignments\SDD & Dautom\V3\SDDUserApi\SDDUserApi\bin\Debug\net8.0\BCrypt.Net-Next.dll
 S:\Work\Interview Assignments\SDD & Dautom\V3\SDDUserApi\SDDUserApi\bin\Debug\net8.0\Microsoft.AspNetCore.Authentication.JwtBearer.dll
 S:\Work\Interview Assignments\SDD & Dautom\V3\SDDUserApi\SDDUserApi\bin\Debug\net8.0\Microsoft.Bcl.AsyncInterfaces.dll
+S:\Work\Interview Assignments\SDD & Dautom\V3\SDDUserApi\SDDUserApi\bin\Debug\net8.0\Microsoft.Bcl.TimeProvider.dll
 S:\Work\Interview Assignments\SDD & Dautom\V3\SDDUserApi\SDDUserApi\bin\Debug\net8.0\Microsoft.Data.SqlClient.dll
 S:\Work\Interview Assignments\SDD & Dautom\V3\SDDUserApi\SDDUserApi\bin\Debug\net8.0\Microsoft.EntityFrameworkCore.dll
 S:\Work\Interview Assignments\SDD & Dautom\V3\SDDUserApi\SDDUserApi\bin\Debug\net8.0\Microsoft.EntityFrameworkCore.Abstractions.dll
@@ -33,6 +35,10 @@ S:\Work\Interview Assignments\SDD & Dautom\V3\SDDUserApi\SDDUserApi\bin\Debug\ne
 S:\Work\Interview Assignments\SDD & Dautom\V3\SDDUserApi\SDDUserApi\bin\Debug\net8.0\Microsoft.OpenApi.dll
 S:\Work\Interview Assignments\SDD & Dautom\V3\SDDUserApi\SDDUserApi\bin\Debug\net8.0\Microsoft.SqlServer.Server.dll
 S:\Work\Interview Assignments\SDD & Dautom\V3\SDDUserApi\SDDUserApi\bin\Debug\net8.0\Microsoft.Win32.SystemEvents.dll
+S:\Work\Interview Assignments\SDD & Dautom\V3\SDDUserApi\SDDUserApi\bin\Debug\net8.0\Newtonsoft.Json.dll
+S:\Work\Interview Assignments\SDD & Dautom\V3\SDDUserApi\SDDUserApi\bin\Debug\net8.0\Serilog.dll
+S:\Work\Interview Assignments\SDD & Dautom\V3\SDDUserApi\SDDUserApi\bin\Debug\net8.0\Serilog.Extensions.Logging.dll
+S:\Work\Interview Assignments\SDD & Dautom\V3\SDDUserApi\SDDUserApi\bin\Debug\net8.0\Serilog.Sinks.File.dll
 S:\Work\Interview Assignments\SDD & Dautom\V3\SDDUserApi\SDDUserApi\bin\Debug\net8.0\Swashbuckle.AspNetCore.Swagger.dll
 S:\Work\Interview Assignments\SDD & Dautom\V3\SDDUserApi\SDDUserApi\bin\Debug\net8.0\Swashbuckle.AspNetCore.SwaggerGen.dll
 S:\Work\Interview Assignments\SDD & Dautom\V3\SDDUserApi\SDDUserApi\bin\Debug\net8.0\Swashbuckle.AspNetCore.SwaggerUI.dll
@@ -77,8 +83,3 @@ S:\Work\Interview Assignments\SDD & Dautom\V3\SDDUserApi\SDDUserApi\obj\Debug\ne
 S:\Work\Interview Assignments\SDD & Dautom\V3\SDDUserApi\SDDUserApi\obj\Debug\net8.0\SDDUserApi.pdb
 S:\Work\Interview Assignments\SDD & Dautom\V3\SDDUserApi\SDDUserApi\obj\Debug\net8.0\SDDUserApi.genruntimeconfig.cache
 S:\Work\Interview Assignments\SDD & Dautom\V3\SDDUserApi\SDDUserApi\obj\Debug\net8.0\ref\SDDUserApi.dll
-S:\Work\Interview Assignments\SDD & Dautom\V3\SDDUserApi\SDDUserApi\bin\Debug\net8.0\Newtonsoft.Json.dll
-S:\Work\Interview Assignments\SDD & Dautom\V3\SDDUserApi\SDDUserApi\bin\Debug\net8.0\Serilog.dll
-S:\Work\Interview Assignments\SDD & Dautom\V3\SDDUserApi\SDDUserApi\bin\Debug\net8.0\Serilog.Extensions.Logging.dll
-S:\Work\Interview Assignments\SDD & Dautom\V3\SDDUserApi\SDDUserApi\bin\Debug\net8.0\Serilog.Sinks.File.dll
-S:\Work\Interview Assignments\SDD & Dautom\V3\SDDUserApi\SDDUserApi\bin\Debug\net8.0\BCrypt.Net-Next.dll

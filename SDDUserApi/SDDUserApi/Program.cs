@@ -3,6 +3,7 @@ using Microsoft.EntityFrameworkCore;
 using Microsoft.IdentityModel.Tokens;
 using Microsoft.OpenApi.Models;
 using SDDUserApi.Data.DBConfiguration;
+using SDDUserApi.JWTHelper;
 using SDDUserApi.Repository;
 using SDDUserApi.Services;
 using SDDUserApi.Utilities;
@@ -92,6 +93,8 @@ builder.Services.AddScoped<IUserService, UserService>();
 builder.Services.AddScoped<IUserRepository, UserRepository>();
 builder.Services.AddScoped<IPasswordHasher, PasswordHasher>();
 builder.Services.AddScoped<IAuditService, AuditService>();
+builder.Services.AddScoped<AuthService>();
+builder.Services.AddScoped<JwtHelper>();
 builder.Services.AddAutoMapper(typeof(Program));
 
 var app = builder.Build();

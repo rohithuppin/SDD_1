@@ -1,4 +1,5 @@
 ﻿using System.Security.Cryptography;
+using System.Text;
 
 namespace SDDUserApi.Utilities
 {
@@ -23,6 +24,9 @@ namespace SDDUserApi.Utilities
 
             var hashedPassword = Convert.ToBase64String(hashBytes);
             return hashedPassword;
+
+            //string hashedPassword = EncryptPasswordbyRFC(password);
+            //return hashedPassword;
         }
 
         public bool VerifyPasswordHash(string password, string hashedPassword)
@@ -44,8 +48,8 @@ namespace SDDUserApi.Utilities
                     return false;
                 }
             }
-
             return true;
+            
         }
     }
 }
